@@ -1,4 +1,4 @@
-import { useContext, useDeferredValue, useEffect } from "react"
+import { useContext } from "react"
 import { CreateRegister } from "../context/RegisterContext"
 import { Navigate, redirect } from "react-router-dom"
 import '../style/cardSuccess.css';
