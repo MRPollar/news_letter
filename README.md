@@ -1,2 +1,2 @@
 # news_letter
-desafio front-end mentor
+Formulário de inscrição no boletim informativo com mensagem de sucesso
