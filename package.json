@@ -1,6 +1,6 @@
 {
   "name": "newsletter",
-  "homepage": "https://mrpollar.github.io/news_letter",
+  "homepage": "https://mrpollar.github.io/newsletter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
