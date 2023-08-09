@@ -1,0 +1,54 @@
+input[type=text],
+button{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label span.err-message{
+    color: var(--errRed);
+}
+
+input[type=text]{
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    transition: .4s;
+}
+
+input[type=text]:focus,
+input[type=text]:hover{
+    border-color: var(--fontColor);
+}
+
+input[type=text].error{
+    border-color: var(--errRed);
+    background-color: var(--bgErr);
+}
+input[type=text].error::placeholder{
+    color: var(--errRed);
+}
+
+button{
+    background-color: var(--fontColor);
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover{
+    background: var(--hoverColor);
+    background: var(--hoverGradient);
+}

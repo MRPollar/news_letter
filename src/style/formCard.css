@@ -1,0 +1,87 @@
+.form-card{
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--fontColor);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.form-card .message{
+    padding: 20px 40px 20px 20px;
+}
+
+.form-card .message h1,
+.form-card .message p{
+    margin-bottom: 30px;
+}
+
+.form-card .message h1{
+    font-size: var(--fontSizeTitle);
+}
+
+.form-card .message ul{
+    margin-bottom: 40px;
+    list-style-type: none;
+
+}
+
+.form-card .message p,
+.form-card .message ul li{
+    font-size: 18px;
+}
+
+.form-card .message ul li{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.form-card .background-form .bacground-form-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .form-card{
+        width: 100%;
+        min-height: 100%;
+        max-width: 1000px;
+        padding: 0px;
+        background-color: #fff;
+        border-radius: 0;
+        flex-wrap: wrap;
+        position: static;
+        transform: translate(0,0);
+        padding-bottom: 50px;
+    }
+
+    .form-card .message,
+    .form-card .background-form{
+        width: 100%;
+    }
+
+    .form-card .message{
+        order: 2;
+        padding: 20px;
+    }
+    .form-card .background-form{
+        order: 1;
+    }
+
+    .form-card .background-form .bacground-form-desktop{
+        display: none;
+    }
+
+    .form-card .background-form .bacground-form-mobile{
+        width: 100%;
+        display: block;
+    }
+}
