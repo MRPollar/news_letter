@@ -1,6 +1,6 @@
 import '../style/form.css';
 import { CreateRegister } from '../context/RegisterContext';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 
 export default function Form(){
     const { error, userRegister, setError } = useContext(CreateRegister);
@@ -14,7 +14,7 @@ export default function Form(){
 
     function handleEmail(e){
         setEmail(e.target.value);
-        if(error == true){
+        if(error === true){
             setError(false)
         }
     }
