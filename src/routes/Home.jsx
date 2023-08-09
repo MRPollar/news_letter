@@ -11,6 +11,7 @@ import mobile from '../assets/illustration-sign-up-mobile.svg';
 
 
 export default function Home(){
+    document.title = 'NewsLetter - Registrar';
     const [lista] = useState([
         'Descoberta de produtos e construção do que importa',
         'Medir para garantir que as atualizações sejam um sucesso',

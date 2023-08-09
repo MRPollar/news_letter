@@ -5,6 +5,7 @@ import '../style/cardSuccess.css';
 import success from '../assets/icon-success.svg';
 
 export default function Registered(){
+    document.title = 'NewsLetter - Confirmação de email';
     const { registered, registeredEmail, setRegistered, setRegisteredEmail } = useContext(CreateRegister);
 
     function handlerDismissMessage(){
