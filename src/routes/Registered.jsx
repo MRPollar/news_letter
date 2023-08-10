@@ -24,9 +24,9 @@ export default function Registered(){
             <div className="card-success">
                 <div>
                     <img src={success} alt=""/>
-                    <h1>Obrigado por se inscrever!</h1>
-                    <p>Foi enviado um e-mail de confirmação para <b>{registeredEmail}</b>. Por favor, abra-o e clique no botão dentro para confirmar sua assinatura.</p>
-                    <button className="dismiss" onClick={handlerDismissMessage}>Descartar mensagem</button>
+                    <h1 role="título">Obrigado por se inscrever!</h1>
+                    <p role="confirmação">Foi enviado um e-mail de confirmação para <b>{registeredEmail}</b>. Por favor, abra-o e clique no botão dentro para confirmar sua assinatura.</p>
+                    <button role="button" className="dismiss" onClick={handlerDismissMessage}>Descartar mensagem</button>
                 </div>
             </div>
             }

@@ -24,16 +24,16 @@ export default function Home(){
             { registered ? <Navigate to="/registered"/> : ''}
             <div class="form-card">
                 <div className="message">
-                    <h1>fique atualizado!</h1>
-                    <p>junte-se a mais de 60.000 gerentes de produto que recebem atualizações mensais sobre:</p>
-                    <ul>
-                        {lista.map((linha,index) => <li key={index}><img src={iconList} alt={linha}/>{linha}</li>)}
+                    <h1 role="titulo">fique atualizado!</h1>
+                    <p role="chamada">junte-se a mais de 60.000 gerentes de produto que recebem atualizações mensais sobre:</p>
+                    <ul role="serviços">
+                        {lista.map((linha,index) => <li key={index}><img src={iconList} alt=""/>{linha}</li>)}
                     </ul>
                     <Form/>
                 </div>
                 <div className="background-form">
-                    <img className="bacground-form-desktop" src={desktop} alt=""/>
-                    <img className="bacground-form-mobile" src={mobile} alt=""/>
+                    <img role="banner" className="bacground-form-desktop" src={desktop} alt=""/>
+                    <img role="banner" className="bacground-form-mobile" src={mobile} alt=""/>
                 </div>
             </div>
         </>

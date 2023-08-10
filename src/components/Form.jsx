@@ -21,9 +21,9 @@ export default function Form(){
 
     return(
         <form onSubmit={handleSubmit}>
-            <label htmlFor=""><span>Endereço de email</span>{error ? <span class="err-message">e-mail válido necessário</span> : ''}</label>
-            <input onChange={handleEmail} className={error ? 'error': ''} type="text" placeholder="exemplo@email.com" defaultValue={email}/>
-            <button type="submit">Assinatura mensal da newsletter</button>
+            <label role='email' htmlFor=""><span>Endereço de email</span>{error ? <span class="err-message">e-mail válido necessário</span> : ''}</label>
+            <input role='input' onChange={handleEmail} className={error ? 'error': ''} type="text" placeholder="exemplo@email.com" defaultValue={email}/>
+            <button type="submit" role="button">Assinatura mensal da newsletter</button>
         </form>
     )
 }
