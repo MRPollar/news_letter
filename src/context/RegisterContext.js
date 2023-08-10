@@ -8,7 +8,8 @@ export default function RegisterContext({children}){
     const [registeredEmail, setRegisteredEmail] = useState('');
 
     function userRegister(email){
-        if(email !== '' && email.includes('@') && email.includes('.com')){
+        const mailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+        if(mailRegex.test(email)){
             setRegistered(true);
             setRegisteredEmail(email);
         } else {
