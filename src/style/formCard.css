@@ -15,12 +15,12 @@
 }
 
 .form-card .message{
-    padding: 20px 40px 20px 20px;
+    padding: 20px 60px;
 }
 
 .form-card .message h1,
 .form-card .message p{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .form-card .message h1{
@@ -35,7 +35,7 @@
 
 .form-card .message p,
 .form-card .message ul li{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .form-card .message ul li{

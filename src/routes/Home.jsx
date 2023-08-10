@@ -22,18 +22,18 @@ export default function Home(){
     return(
         <>
             { registered ? <Navigate to="/registered"/> : ''}
-            <div class="form-card">
+            <div role="main" class="form-card">
                 <div className="message">
-                    <h1 role="titulo">fique atualizado!</h1>
-                    <p role="chamada">junte-se a mais de 60.000 gerentes de produto que recebem atualizações mensais sobre:</p>
-                    <ul role="serviços">
-                        {lista.map((linha,index) => <li key={index}><img src={iconList} alt=""/>{linha}</li>)}
+                    <h1>fique atualizado!</h1>
+                    <p>junte-se a mais de 60.000 gerentes de produto que recebem atualizações mensais sobre:</p>
+                    <ul role="tablist">
+                        {lista.map((linha,index) => <li role="tab" key={index}><img src={iconList} alt=""/>{linha}</li>)}
                     </ul>
                     <Form/>
                 </div>
                 <div className="background-form">
-                    <img role="banner" className="bacground-form-desktop" src={desktop} alt=""/>
-                    <img role="banner" className="bacground-form-mobile" src={mobile} alt=""/>
+                    <img className="bacground-form-desktop" src={desktop} alt=""/>
+                    <img className="bacground-form-mobile" src={mobile} alt=""/>
                 </div>
             </div>
         </>
